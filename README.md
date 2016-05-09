@@ -61,8 +61,8 @@ Right on, CMDR! o7
 
 ## History
 
-v1.0 - Coded late 2015, released 9th May 2016
-v1.1 - user settings now editable in non-admin environments (9th May 2016)
+- v1.0 - Coded late 2015, released 9th May 2016
+- v1.1 - user settings now editable in non-admin environments (9th May 2016)
 
 ## Credits
 
