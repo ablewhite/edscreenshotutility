@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Configuration;
 using System.ServiceProcess;
 using System.Diagnostics;
 using System.IO;
@@ -63,7 +62,7 @@ namespace EDScreenshotUI
                 this.Close();
             }
 
-            string screenshotFolder = ConfigurationManager.AppSettings["EDScreenshotFolder"];
+            string screenshotFolder = Properties.Settings.Default.EDScreenshotFolder;
 
             if (!Directory.Exists(screenshotFolder))
             {
@@ -72,13 +71,7 @@ namespace EDScreenshotUI
                 screenshotFolder = Path.Combine(userFolder, "Pictures\\Frontier Developments\\Elite Dangerous");
             }
 
-            string strJpegQuality = ConfigurationManager.AppSettings["JpegQuality"];
-            int jpegQuality;
-
-            if (!Int32.TryParse(strJpegQuality, out jpegQuality))
-            {
-                jpegQuality = 80;
-            }
+            int jpegQuality = Properties.Settings.Default.JpegQuality;
             
             if (jpegQuality < 10)
             {
@@ -94,7 +87,7 @@ namespace EDScreenshotUI
             folderBrowserDialog1.SelectedPath = screenshotFolder;
             tbQuality.Value = jpegQuality;
 
-            string removeBMPOption = ConfigurationManager.AppSettings["RemoveBMP"];
+            string removeBMPOption = Properties.Settings.Default.RemoveBMP;
 
             switch (removeBMPOption.ToLower()) 
             {
@@ -111,7 +104,7 @@ namespace EDScreenshotUI
                     break;
             }
 
-            string preferredFormat = ConfigurationManager.AppSettings["PreferredFormat"];
+            string preferredFormat = Properties.Settings.Default.PreferredFormat;
 
             switch (preferredFormat.ToLower())
             {
@@ -133,23 +126,17 @@ namespace EDScreenshotUI
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
                 txtScreenshotFolder.Text = folderBrowserDialog1.SelectedPath;
-                updateConfig("EDScreenshotFolder", folderBrowserDialog1.SelectedPath);
+                Properties.Settings.Default.EDScreenshotFolder = folderBrowserDialog1.SelectedPath;
+                Properties.Settings.Default.Save();
             }
 
-        }
-
-        private void updateConfig(string key, string value)
-        {
-            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-            config.AppSettings.Settings[key].Value = value;
-            config.Save(ConfigurationSaveMode.Modified);
-            ConfigurationManager.RefreshSection("appSettings");
         }
 
         private void tbQuality_ValueChanged(object sender, EventArgs e)
         {
             lblSelectedQuality.Text = string.Format("{0}% quality", tbQuality.Value);
-            updateConfig("JpegQuality", tbQuality.Value.ToString());
+            Properties.Settings.Default.JpegQuality = tbQuality.Value;
+            Properties.Settings.Default.Save();
         }
 
         private void toggleJpegControls(bool active)
@@ -171,7 +158,8 @@ namespace EDScreenshotUI
                 service.ExecuteCommand((int)CustomCommand.PrefFormatJPG);
             }
 
-            updateConfig("PreferredFormat", "JPG");
+            Properties.Settings.Default.PreferredFormat = "JPG";
+            Properties.Settings.Default.Save();
         }
 
         private void rbPNG_CheckedChanged(object sender, EventArgs e)
@@ -184,7 +172,8 @@ namespace EDScreenshotUI
                 service.ExecuteCommand((int)CustomCommand.PrefFormatPNG);
             }
 
-            updateConfig("PreferredFormat", "PNG");
+            Properties.Settings.Default.PreferredFormat = "PNG";
+            Properties.Settings.Default.Save();
         }
 
         private void linkAttribution_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -417,7 +406,8 @@ namespace EDScreenshotUI
                 service.ExecuteCommand((int)CustomCommand.RemoveBMPAlways);
             }
 
-            updateConfig("RemoveBMP", "Always");
+            Properties.Settings.Default.RemoveBMP = "Always";
+            Properties.Settings.Default.Save();
         }
 
         private void rbHighResOnly_CheckedChanged(object sender, EventArgs e)
@@ -429,7 +419,8 @@ namespace EDScreenshotUI
                 service.ExecuteCommand((int)CustomCommand.RemoveBMPOnly4K);
             }
 
-            updateConfig("RemoveBMP", "4KOnly");
+            Properties.Settings.Default.RemoveBMP = "4KOnly";
+            Properties.Settings.Default.Save();
         }
 
         private void rbNever_CheckedChanged(object sender, EventArgs e)
@@ -441,7 +432,8 @@ namespace EDScreenshotUI
                 service.ExecuteCommand((int)CustomCommand.RemoveBMPNever);
             }
 
-            updateConfig("RemoveBMP", "Never");
+            Properties.Settings.Default.RemoveBMP = "Never";
+            Properties.Settings.Default.Save();
         }
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)

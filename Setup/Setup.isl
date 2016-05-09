@@ -341,8 +341,8 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>EDScreenshotService.exe</td><td>{2A4D19A3-4F17-4983-A2B2-200AC17DD02C}</td><td>INSTALLDIR</td><td>2</td><td/><td>edscreenshotservice.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>EDScreenshotUI.exe</td><td>{DC64E9ED-5B0A-495D-A34A-7484D2172FAE}</td><td>INSTALLDIR</td><td>2</td><td/><td>edscreenshotui.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>EDScreenshotService.exe</td><td>{F09CA466-BB3F-4F03-98D0-68F25708BF6D}</td><td>INSTALLDIR</td><td>2</td><td/><td>edscreenshotservice.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>EDScreenshotUI.exe</td><td>{C8C903CF-5813-42B3-8BFB-34D3B183EDAF}</td><td>INSTALLDIR</td><td>2</td><td/><td>edscreenshotui.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{8EF259BC-C637-4849-8E4B-D2DB50BCF7C6}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
@@ -1888,10 +1888,9 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>edscreenshotservice.exe</td><td>EDScreenshotService.exe</td><td>EDSCRE~1.EXE|EDScreenshotService.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\EDScreenshotService\EDScreenshotService\bin\Release\EDScreenshotService.exe</td><td>1</td><td/></row>
-		<row><td>edscreenshotui.exe</td><td>EDScreenshotUI.exe</td><td>EDSCRE~1.EXE|EDScreenshotUI.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\EDScreenshotService\EDScreenshotUI\bin\Release\EDScreenshotUI.exe</td><td>1</td><td/></row>
-		<row><td>edscreenshotui.exe.config</td><td>ISX_DEFAULTCOMPONENT</td><td>EDSCRE~1.CON|EDScreenshotUI.exe.Config</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\EDScreenshotService\EDScreenshotUI\bin\Release\EDScreenshotUI.exe.Config</td><td>1</td><td/></row>
-		<row><td>readme.md</td><td>ISX_DEFAULTCOMPONENT</td><td>README.md</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\EDScreenshotService\README.md</td><td>1</td><td/></row>
+		<row><td>edscreenshotservice.exe</td><td>EDScreenshotService.exe</td><td>EDSCRE~1.EXE|EDScreenshotService.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\GitHub\edscreenshotutility\EDScreenshotService\bin\Release\EDScreenshotService.exe</td><td>1</td><td/></row>
+		<row><td>edscreenshotui.exe</td><td>EDScreenshotUI.exe</td><td>EDSCRE~1.EXE|EDScreenshotUI.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\GitHub\edscreenshotutility\EDScreenshotUI\bin\Release\EDScreenshotUI.exe</td><td>1</td><td/></row>
+		<row><td>readme.md</td><td>ISX_DEFAULTCOMPONENT</td><td>README.md</td><td>0</td><td/><td/><td/><td>1</td><td>D:\GitHub\edscreenshotutility\README.md</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -1907,6 +1906,7 @@
 	<table name="ISAssistantTag">
 		<col key="yes" def="s72">Tag</col>
 		<col def="S255">Data</col>
+		<row><td>EDScreenshotUI.exe</td><td/></row>
 	</table>
 
 	<table name="ISBillBoard">
@@ -2033,8 +2033,8 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
-		<row><td>EDScreenshotService.exe</td><td/><td/><td>_9891D9A6_4737_4AC0_B071_D19BAAFB74E0_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>EDScreenshotUI.exe</td><td/><td/><td>_5D9CA285_9214_47A4_B052_63594B13E3EE_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>EDScreenshotService.exe</td><td/><td/><td>_4C45D506_BC1F_48EB_8C86_74DF6E08C0E8_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>EDScreenshotUI.exe</td><td/><td/><td>_E2EA77E4_3505_4DF6_83B3_A4EB4F36972A_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_48E55AC5_C72C_4335_A49B_89A965EC25E8_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
@@ -2623,7 +2623,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>CMDR Lenslok</td><td>0</td><td/><td>1252270657</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>CMDR Lenslok</td><td>0</td><td/><td>1252275831</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>849642103</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>849642103</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1118103671</td></row>
@@ -3438,6 +3438,8 @@
 		<row><td>IDS_SETUPEXE_LAUNCH_COND_E</td><td>1033</td><td>This setup was built with an evaluation version of InstallShield and can only be launched from setup.exe.</td><td>0</td><td/><td>849642103</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME1</td><td>1033</td><td>Elite Dangerous Screenshot Utility</td><td>0</td><td/><td>1118064855</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>LAUNCH~1.EXE|Launch EDScreenshotService.exe</td><td>0</td><td/><td>1118103703</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME3</td><td>1033</td><td>Elite Dangerous Screenshot Utility</td><td>0</td><td/><td>1252296023</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>LAUNCH~1.EXE|Launch EDScreenshotService.exe</td><td>0</td><td/><td>1252271447</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>849642103</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>849642103</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>849642103</td></row>
@@ -3726,8 +3728,9 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>849642103</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>849642103</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>849642103</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>http://www.CMDRLenslok.com</td><td>0</td><td/><td>1252270657</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>CMDR Lenslok</td><td>0</td><td/><td>1252270657</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>http://www.CMDRLenslok.com</td><td>0</td><td/><td>1252275831</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>CMDR Lenslok</td><td>0</td><td/><td>1252275831</td></row>
+		<row><td>ID_STRING3</td><td>1033</td><td>Elite Dangerous Screenshot Utility</td><td>0</td><td/><td>1252296311</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>849642103</td></row>
 	</table>
 
@@ -3842,6 +3845,8 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I2">ISIconIndex</col>
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\setupicon.ico</td><td>0</td></row>
+		<row><td>EDScreenshotUI.exe_4E3B20D64F68466AB5C6671F4CD7B0E2.exe</td><td/><td>&lt;VSSolutionFolder&gt;\EDScreenshotUI\ed_screenshot_utility.ico</td><td>0</td></row>
+		<row><td>EDScreenshotUI.exe_683CF0D2C82F4D0790B8B91CA5528CC6.exe</td><td/><td>&lt;VSSolutionFolder&gt;\EDScreenshotUI\ed_screenshot_utility.ico</td><td>0</td></row>
 		<row><td>EDScreenshotUI.exe_6A50FB297FF44902A98A3460218CCFAC.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 	</table>
 
@@ -4353,7 +4358,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGRAMFILETOLAUNCHATEND</td><td>[INSTALLDIR]EDScreenshotUI.exe</td><td/></row>
 		<row><td>ProductCode</td><td>{7277B814-19FF-4545-9B33-DF1DF91005F6}</td><td/></row>
 		<row><td>ProductName</td><td>Elite Dangerous Screenshot Service</td><td/></row>
-		<row><td>ProductVersion</td><td>1.00.0000</td><td/></row>
+		<row><td>ProductVersion</td><td>1.10.0000</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
@@ -4431,8 +4436,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
 		<row><td>EDScreenshotUI.exe</td><td>EDScreenshotUI.exe</td><td/><td>elited_1_elite_dangerous_screenshot_service</td><td>2</td></row>
-		<row><td>FileKey1</td><td>EDScreenshotUI.exe</td><td/><td>cmdrle_1_cmdr_lenslok</td><td>2</td></row>
-		<row><td>FileKey2</td><td>EDScreenshotUI.exe</td><td/><td>elited_1_elite_dangerous_screenshot_service</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4518,7 +4521,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>EDScreenshotUI.exe</td><td>elited_1_elite_dangerous_screenshot_service</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>EDScreenshotUI.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>EDScreenshotUI.exe_6A50FB297FF44902A98A3460218CCFAC.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>EDScreenshotUI.exe</td><td>elited_1_elite_dangerous_screenshot_service</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>EDScreenshotUI.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>EDScreenshotUI.exe_4E3B20D64F68466AB5C6671F4CD7B0E2.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>EDScreenshotUI.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>EDScreenshotUI.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>EDScreenshotUI.exe_683CF0D2C82F4D0790B8B91CA5528CC6.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">
